@@ -13,8 +13,7 @@ A convolutional sequence to sequence model for Persian text to speech based on (
 
 In the following figure a schematic of the model architecture is presented:
 
-![text to mel](/imgs/text2mel.jpg)
-![Alt text](/imgs/text2mel.jpg?raw=true "Title")
+![text to mel](/imgs/texttomel.jpg)
 
 Dataset: (a Persian single speaker speech dataset that last more than 30 hours [narrated by Maryam Mahboub] )
 
