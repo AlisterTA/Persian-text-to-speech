@@ -38,6 +38,7 @@ In the following figure the learned character embeddings is shown:
 **Some generated samples:**
 
 [woman](https://soundcloud.com/12211221212/sets/persian-text-2-speechwoman)
+
 [man](https://soundcloud.com/12211221212/sets/persian-text-2-speech)
  
 **Pre-trained model:**
