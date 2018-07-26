@@ -35,7 +35,7 @@ In the following figure the learned character embeddings is shown:
 
 ![text to mel](/imgs/char-embedding.jpg)
 
-**Some generated samples:**
+**Some generated samples:**(NOTE:I use the [Griffin Lim algorithm](https://ieeexplore.ieee.org/document/6701851/) to invert the prediction back to audio signal.i found that's the main source of audible artifacts)
 
 [woman](https://soundcloud.com/12211221212/sets/persian-text-2-speechwoman)
 
