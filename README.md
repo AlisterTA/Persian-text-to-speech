@@ -42,4 +42,9 @@ In the following figure the learned character embeddings is shown:
 
 You can download pre-trained weights from here
 
+**Script files**
 
+if you want to train and test your own datasets:
+Modify train.ipynb including args and data path
+
+demo.ipynb:Enter your sentences and listen to the generated audio
