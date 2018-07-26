@@ -36,7 +36,10 @@ In the following figure the learned character embeddings is shown:
 ![text to mel](/imgs/char-embedding.jpg)
 
 **Some generated samples:**
-
+![](filename.mp3)
+![](filename.mp3)
+![](filename.mp3)
+![](filename.mp3)
 **Pre-trained model:**
 
 You can download pre-trained weights from here
