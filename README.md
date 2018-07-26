@@ -13,7 +13,7 @@ A convolutional sequence to sequence model for Persian text to speech based on (
 
 In the following figure a schematic of the model architecture is presented:
 
-PICCCCCCCCCC
+![alt text](imgs/text2mel.png)
 
 
 
