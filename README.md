@@ -1,4 +1,4 @@
-# Persian-text-to-speech
+# Persian text to speech
 
 **A convolutional sequence to sequence model for Persian text to speech based on [Tachibana et al](https://arxiv.org/abs/1710.08969) with a few modifications:**
 
