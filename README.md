@@ -1,6 +1,6 @@
 # Persian-text-to-speech
 
-**A convolutional sequence to sequence model for Persian text to speech based on [Tachibana et al](https://arxiv.org/abs/1710.08969) with a few modifications:
+** A convolutional sequence to sequence model for Persian text to speech based on [Tachibana et al](https://arxiv.org/abs/1710.08969) with a few modifications: **
 
 1)	The article didn’t mention position embedding, but in order to give the model a sense of position awareness I added it (I turned out to be useful in the original [convolutional seq2seq paper](https://arxiv.org/abs/1705.03122)
 
@@ -15,7 +15,7 @@ In the following figure a schematic of the model architecture is presented:
 
 ![text to mel](/imgs/texttomel.jpg)
 
-**Dataset: (a Persian single speaker speech dataset that last more than 30 hours [narrated by Maryam Mahboub] )
+** Dataset: (a Persian single speaker speech dataset that last more than 30 hours [narrated by Maryam Mahboub] ) **
 
 There aren’t any available datasets for Persian text to speech so I decided to make my own. I chose to use audio books from [navar](www.navaar.ir) (I couldn’t find any websites for free public domain audiobooks) then I checked for text availability, if text is not available the audio book is excluded. 
 None of them were available so I hacked a few online bookstores like Fidibio to get them. All audio files are sampled at 44 kHz which means there are 44100 values stored for every second of audio, too much information, WAY TOO MUCH! So I down sampled the pcm/wav audio samples from 44 kHz to 22 kHz. I also discarded the stereo channel as it contains highly redundant information.
@@ -36,9 +36,9 @@ In the following figure the learned character embeddings is shown:
 
 ![text to mel](/imgs/char-embedding.jpg)
 
-**Some generated samples:
+** Some generated samples: **
 
-**Pre-trained model: 
+** Pre-trained model: **
 
 You can download pre-trained weights from here
 
