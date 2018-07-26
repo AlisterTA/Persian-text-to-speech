@@ -24,7 +24,7 @@ The audio from  [navar](www.navaar.ir) comes in large files which don’t suit t
 
 The distribution of audio lengths for my dataset is shown in the following figure: (90 percentage of the samples have a duration between 2 and 7 seconds)
 
-![text to mel](/imgs/hist.jpg)
+![text to mel](/imgs/hist.png)
 
 To speed up the training speech and reduce CPU usage I first preprocessed all audio files (using Fourier’s Transform to convert our audio data to the frequency domain). Extracting the audio spectrogram on the fly is expensive. 
 
