@@ -2,7 +2,7 @@
 
 **A convolutional sequence to sequence model for Persian text to speech based on [Tachibana et al](https://arxiv.org/abs/1710.08969) with a few modifications:**
 
-1)	The article didn’t mention position embedding, but in order to give the model a sense of position awareness I added it (I turned out to be useful in the original [convolutional seq2seq paper](https://arxiv.org/abs/1705.03122)
+1)	The article didn’t mention position embedding, but in order to give the model a sense of position awareness I added it (it turned out to be useful in the original [convolutional seq2seq paper](https://arxiv.org/abs/1705.03122)
 
 2)	In the paper they trained both networks with a combination of the L1 loss and an additional binary cross entropy loss , they claim it was beneficial, I found it to be an odd choice of loss function.to validate their idea I trained networks with and without binary cross entropy loss , but adding binary cross entropy loss didn’t make much difference.
 
