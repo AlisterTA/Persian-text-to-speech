@@ -43,7 +43,7 @@ In the following figure the learned character embeddings is shown:
  
 **Pre-trained model:**
 
-You can download pre-trained weights from here
+You can download pre-trained weights from [here](https://www.dropbox.com/s/48wy3kw4e512ax7/logs.rar?dl=0)
 
 **Script files**
 
