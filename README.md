@@ -22,10 +22,9 @@ None of them were available so I $$$$ a few online bookstores like [Fidibo](http
 
 The audio from  [navar](www.navaar.ir) comes in large files which don’t suit the text to speech task. At first I decided to use [automatic force-alignment technique](http://linguistics.berkeley.edu/plab/guestwiki/index.php?title=Forced_alignment) (given an audio clip containing speech [without environmental noise] and the corresponding transcript, computing a forced alignment is the process of determining, for each fragment of the transcript, the time interval containing the spoken text of the fragment) to align the text corpus with audio clips but it didn’t guarantee the correct alignments because texts were slightly different than speech. I finally ended up pragmatically splitting large chunk of audio files into smaller parts by using silence detection and manually aligned text with audio segments.
 
-The distribution of audio lengths for my dataset is shown in the following figure: (90 percentage of the samples have a duration between 4 and 10 seconds)
-imageeee
+The distribution of audio lengths for my dataset is shown in the following figure: (90 percentage of the samples have a duration between 2 and 7 seconds)
 
-
+![text to mel](/imgs/hist.jpg)
 
 To speed up the training speech and reduce CPU usage I first preprocessed all audio files (using Fourier’s Transform to convert our audio data to the frequency domain). Extracting the audio spectrogram on the fly is expensive. 
 
