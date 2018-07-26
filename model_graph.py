@@ -163,7 +163,7 @@ class model(object):
             predicted_mel[:,i,:] = model_out[:,-1,:]
         _Z = self.sess.run(self.Z, {self.Y: predicted_mel})
         
-        print('convert the generated spectrogram to audio ｖ(⌒ｏ⌒)ｖ♪ ...')
+        print('converting the generated spectrogram to audio ｖ(⌒ｏ⌒)ｖ♪ ...')
         for i, mag in enumerate(_Z):
             wav = spectrogram2wav(mag)
             write('generated_samples/' + "/{}.wav".format(i+1),HP.sr,wav.astype(np.float32))
