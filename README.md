@@ -6,7 +6,7 @@ A convolutional sequence to sequence model for Persian text to speech based on (
 
 2)	In the paper they trained both networks with a combination of the L1 loss and an additional binary cross entropy loss , they claim it was beneficial, I found it to be an odd choice of loss function.to validate their idea I trained networks with and without binary cross entropy loss , but adding binary cross entropy loss didn’t make much difference.
 
-3)	In the original paper they used a fixed learning rate of 0.001, but I decayed it, also I noticed using ADAM default parameters lead to gradient exposition so I modified beta nad beta?????
+3)	In the original paper they used a fixed learning rate of 0.001, but I decayed it.according to the [ADAM](https://arxiv.org/abs/1412.6980) paper Good default settings for the tested machine learning problems are α = 0.001,β1 = 0.9, β2 = 0.999 but in my case it didn't work!(gradients keep exploding)
 
 4)	I implemented a standard scaled dot-product attention but it mostly failed to converge. Guided attention is a simple but good idea such that the model converge way faster than a standard scaled dot-product attention. Training the attention part was a bottleneck.
 
