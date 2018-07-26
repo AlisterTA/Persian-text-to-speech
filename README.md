@@ -37,9 +37,9 @@ In the following figure the learned character embeddings is shown:
 
 **Some generated samples:**(NOTE:I use the [Griffin Lim algorithm](https://ieeexplore.ieee.org/document/6701851/) to invert the prediction back to audio signal.i found that's the main source of audible artifacts)
 
-[woman-Maryam Mahboub](https://soundcloud.com/12211221212/sets/persian-text-2-speechwoman)
+[Woman-Maryam Mahboub](https://soundcloud.com/12211221212/sets/persian-text-2-speechwoman)
 
-[man-Arman Soltan zadeh](https://soundcloud.com/12211221212/sets/persian-text-2-speech)
+[Man-Arman Soltan zadeh](https://soundcloud.com/12211221212/sets/persian-text-2-speech)
  
 **Pre-trained model:**
 
