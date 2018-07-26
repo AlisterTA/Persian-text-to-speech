@@ -37,6 +37,11 @@ In the following figure the learned character embeddings is shown:
 
 **Some generated samples:**
 
+<audio controls>
+  <source src="/generated_samples/1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
 ![f](/generated_samples/1.wav)
  
 **Pre-trained model:**
