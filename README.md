@@ -34,6 +34,8 @@ I implemented the models in Tensorflow and they were trained on a single Nvidia 
 
 In the following figure the learned character embeddings is shown:
 
+![text to mel](/imgs/char-embedding.jpg)
+
 **Some generated samples:
 
 **Pre-trained model: 
