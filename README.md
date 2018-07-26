@@ -37,7 +37,7 @@ In the following figure the learned character embeddings is shown:
 
 **Some generated samples:**
 
-![f](\generated_samples\1.wav)
+![f](/generated_samples/1.wav)
 
 **Pre-trained model:**
 
