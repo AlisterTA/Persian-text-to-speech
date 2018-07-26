@@ -20,7 +20,7 @@ In the following figure a schematic of the model architecture is presented:
 There aren’t any available datasets for Persian text to speech so I decided to make my own. I chose to use audio books from [navar](www.navaar.ir) (I couldn’t find any websites for free public domain audiobooks) then I checked for text availability, if text is not available the audio book is excluded. 
 None of them were available so I $$$$ a few online bookstores like [Fidibo](http://fidibo.com/) to get them. All audio files are sampled at 44 kHz which means there are 44100 values stored for every second of audio, too much information, WAY TOO MUCH! So I down sampled the pcm/wav audio samples from 44 kHz to 22 kHz. I also discarded the stereo channel as it contains highly redundant information.
 
-The audio from  [navar](www.navaar.ir) comes in large files which don’t suit the text to speech task. At first I decided to use automatic force-alignment technique (given an audio clip containing speech [without environmental noise] and the corresponding transcript, computing a forced alignment is the process of determining, for each fragment of the transcript, the time interval containing the spoken text of the fragment) to align the text corpus with audio clips but it didn’t guarantee the correct alignments because texts were slightly different than speech. I finally ended up pragmatically splitting large chunk of audio files into smaller parts by using silence detection and manually aligned text with audio segments.
+The audio from  [navar](www.navaar.ir) comes in large files which don’t suit the text to speech task. At first I decided to use [automatic force-alignment technique](http://linguistics.berkeley.edu/plab/guestwiki/index.php?title=Forced_alignment) (given an audio clip containing speech [without environmental noise] and the corresponding transcript, computing a forced alignment is the process of determining, for each fragment of the transcript, the time interval containing the spoken text of the fragment) to align the text corpus with audio clips but it didn’t guarantee the correct alignments because texts were slightly different than speech. I finally ended up pragmatically splitting large chunk of audio files into smaller parts by using silence detection and manually aligned text with audio segments.
 
 The distribution of audio lengths for my dataset is shown in the following figure: (90 percentage of the samples have a duration between 4 and 10 seconds)
 imageeee
@@ -29,7 +29,7 @@ imageeee
 
 To speed up the training speech and reduce CPU usage I first preprocessed all audio files (using Fourier’s Transform to convert our audio data to the frequency domain). Extracting the audio spectrogram on the fly is expensive. 
 
-I implemented the models in Tensorflow and they were trained on a single Nvidia GTX 1050Ti with 4GB memory (a batch size of 32 for TEXT2MEL and 8 for SSRN ).
+I implemented the models in Tensorflow and they were trained on a single Nvidia GTX 1050Ti with 4GB memory (a batch size of 32 for text to spectrogram and 8 for super resolution network ).
 
 
 In the following figure the learned character embeddings is shown:
